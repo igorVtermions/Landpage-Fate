@@ -13,48 +13,67 @@ body {
 }
 /*NavBar*/
 
-header {
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .nav-list a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo{
+    object-fit: cover;
+    width: 130px ;
+    margin-left: 32px;
+  }
+
+  header{
+    overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 100;
-}
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #6200ff;
+    height: 8vh;
+  }
 
-#header img{
-    height: 65px;
-    margin-left: 50px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-
-ul li{
+  .nav-list {
     list-style: none;
-    display: inline-block;
-   margin-right: 30px;
-}
-
-ul li:hover{
-    opacity: 0.8;
-    transition: 0.7s;
-}
-
-#header img:hover{
-    height: 75%;
-    transition: 0.7s;
-
-}
-
-
-
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-right: 32px;
+    font-size: 15px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  .contato{
+    visibility: hidden;
+  }
+  
+  
+  
 /*main*/
 
 .contents{
