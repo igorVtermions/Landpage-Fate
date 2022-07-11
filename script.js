@@ -42,3 +42,12 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li",
 );
 mobileNavbar.init();
+
+
+//switch theme
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () =>{
+  document.body.classList.toggle('dark');
+})
